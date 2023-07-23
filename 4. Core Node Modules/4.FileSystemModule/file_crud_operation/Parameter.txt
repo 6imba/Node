@@ -1,0 +1,43 @@
+fs.openSync(path[, flags[, mode]])
+
+# flag: 'r', 'r+', 'a', 'w'
+    - The flag to type of perform operation.
+    - flags <string> | <number> Default: 'r'. ==>  See support of file system flags. 
+
+# mode: 
+    mode <string> | <integer> Default: 0o666 (readable and writable)
+
+# path:
+    path <string> | <Buffer> | <URL>
+
+# Returns: <number>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Flags:
+    - The following table lists all the flags which can be used in read/write operation.
+
+Flag	Description
+ r	     Open file for reading. An exception occurs if the file does not exist.
+ r+	     Open file for reading and writing. An exception occurs if the file does not exist.
+ rs	     Open file for reading in synchronous mode.
+ rs+	 Open file for reading and writing, telling the OS to open it synchronously. See notes for 'rs' about using this with caution.
+ w	     Open file for writing. The file is created (if it does not exist) or truncated (if it exists).
+ wx	     Like 'w' but fails if path exists.
+ w+	     Open file for reading and writing. The file is created (if it does not exist) or truncated (if it exists).
+ wx+	 Like 'w+' but fails if path exists.
+ a	     Open file for appending. The file is created if it does not exist.
+ ax	     Like 'a' but fails if path exists.
+ a+	     Open file for reading and appending. The file is created if it does not exist.
+ ax+	 Like 'a+' but fails if path exists.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# mode: 
+    - mode sets the file mode (permission and sticky bits), but only if the file was created. On Windows, only the write permission can be manipulated; see fs.chmod().
+    - 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const { watch.writeFile  } = require('fs/promises');
+import { access, open, close, constants, appendFile, chmod } from 'fs';

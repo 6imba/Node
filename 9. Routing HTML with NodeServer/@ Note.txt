@@ -1,0 +1,2 @@
+- If we are making web-application using NodeJS, our NodeServer should serve HTML.
+- Serve HTML pages using node core fs module. (2.server_node_serving_html_page.js)

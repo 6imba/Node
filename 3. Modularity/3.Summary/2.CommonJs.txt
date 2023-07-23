@@ -1,0 +1,38 @@
+# 1:
+module.exports = variable_to_be_exported; //export variable(literals,object,function,class) as it is.
+let myVar = require('./2. ExportModule') // importing variable.
+
+# 2:
+module.exports.variable1 = variable2;//export variable as property_value of object(object of object: nested object. i.e ==> { variable1: [DataType: variable2] }
+var variable3 = require('./2. ExportModule') // importing variable.
+
+# 3. Multiple variable exported from a single module using Object:
+    - Export:
+        module.exports.varibale11 = varibale1;
+        module.exports.varibale22 = varibale2;
+        module.exports.varibale33 = varibale3;
+    - Import variable inside Object:
+        const myObjectHOldingAllVar = require('module_path/name') // variable name should be same as object_property_name.
+        console.log(myObjectHOldingAllVar.varibale11)
+        console.log(myObjectHOldingAllVar.varibale22)
+        console.log(myObjectHOldingAllVar.varibale33)
+
+# 4. Multiple variable exported from a single module using Object:
+    - Export:
+        module.exports.varibale11 = varibale1;
+        module.exports.varibale22 = varibale2;
+        module.exports.varibale33 = varibale3;
+    - Import variable using Object destructuring:
+        const {varibale11, varibale22, varibale33} = require('module_path/name') // variable name should be same as object_property_name.
+    - Error:
+        const {varibale111, varibale222, varibale333} = require('module_path/name') // or else variable value is undefined.
+    - Solution:
+        const {varibale11: varibale111, varibale22: varibale222, varibale33: varibale333} = require('module_path/name')
+
+# 5. Multiple variable exported from a single module using Object Constructing/Destructuring:
+    - Export: Object Constructing.
+        module.exports= {varaible1, varaible2, varaible3, varaible4};
+    - Import: Object Destructuring:
+        const {varaible2, varaible3, varaible1, varaible4} = require('module_path/file') // variable order doesnt matters at all.
+
+# Note: Variable can be literals, array, object, function, class, boolean, etc any DataType.

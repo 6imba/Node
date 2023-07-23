@@ -1,0 +1,41 @@
+- buffering ~ loading ?
+- buffer?
+- buffer: serve, load, 
+
+# Hexa-Decimal representation of raw binary data.
+    <Buffer 3c 68 74 6d 6c 3e 0d 0a 3c 62 6f 64 79 3e 0d 0a 3c 70 3e 69 6c 65 2e 3c 2f 3e 0d 0a 3c ... 6 more bytes>
+
+- buffer is a storage area given to any electronic device mobile,computer, etc to store a data before it is being processed.
+- (buffer data is a data stored in our device before processing)
+- different device have different buffer memory(depends how much programmer provides).
+- is buffer storage different for different application(youtube,messenger).
+
+Example:
+    - textarea in messaging app is buffer area.
+
+==> buffer hold data in your device before processing.
+==> when rate of data_receiving is higher than rate of data_processing, we use buffer.(store receiving data in buffer memory)
+==> youtube grey line is buffer_data and red line is processed_data.
+==> 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+# Reference:
+    - https://www.youtube.com/watch?v=1_n_xvUlOUY
+    - https://www.youtube.com/watch?v=vE9y1mqnCCk
+    - https://www.imperva.com/learn/application-security/buffer-overflow/
+
+
+
+
+# Buffer in node:
+    - 
+
+# What is streams and buffers in Node?
+    - Streams work on a concept called buffer. A buffer is a temporary memory that a stream takes to hold some data until it is consumed.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+streaming: sending pre-stored data.(from source to destination)
+buffering: holding pre-passed data in destination's buffer memory, send from sources.
+processing: processing pre-stored data in buffer storage.

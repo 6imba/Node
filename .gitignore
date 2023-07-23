@@ -1,0 +1,45 @@
+.env
+.mp4
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# npm cache
+*.npm
+*.cache
+*.nfs.*
+*.eslintcache
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Optional: If you're using TypeScript
+# Add the following lines if your project uses TypeScript
+# /dist/
+# /tsconfig.tsbuildinfo
+

@@ -1,0 +1,21 @@
+# https://openweathermap.org/guide
+# Chrome JSON formater extention.
+
+Q How to make an API call?
+    * API call ==> https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+        i.e ==> https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=a840f8d5c6b45d7291e7dca9dc2b51a3
+                https://api.openweathermap.org/data/2.5/weather?q=Kathmandu&appid=a840f8d5c6b45d7291e7dca9dc2b51a3
+
+    * API call ==> https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+        i.e ==> https://api.openweathermap.org/data/2.5/weather?lat=27.7167&lon=85.3167&appid=a840f8d5c6b45d7291e7dca9dc2b51a3
+
+    - Like function call greet(); for greet(){alert("Namaste.")}
+    - Same API call url for api code defination.
+
+- npm requests
+
+- requests('https://api.openweathermap.org/data/2.5/weather?q=Kathmandu&appid=a840f8d5c6b45d7291e7dca9dc2b51a3')
+    - returns Event_Instance
+    - So, .on() funtion to write event_handler/event_listener.
+
+

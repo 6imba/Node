@@ -1,0 +1,27 @@
+- CommonJS (CJS) is what Node. js has used historically. ESM (EcmaScript modules) is a newer system which has been added to the JavaScript specification.
+
+- When ever we run NodeJS program, by default it follow CommonJS_Module_System. --> require()
+- So to make our Node_JS program follow ECMA/ES5/ESM_Module_System:
+    1> We can either name file with .mjs extension.
+        OR
+    2> We can add package.json file with "type":"module" value-pair in it, In case of NodeJS.
+    3> We can add type="module" attribute inside <script> tag of html file. i.e <script type="module" src="script.js">, In case of Vanilla_JS.
+
+# CommonJS: CommonJS as a global object provides all these methods & property.
+    - console.log(module)
+    - console.log(module.export)
+    - console.log(export)
+    - console.log(__filename)
+    - console.log(__dirname)
+    - console.log(require)
+
+# ESM:
+    - Error: module, module.export, export, __filename, __dirnamem, require is not define error.
+    - ESM doesnt provides all these methods & property.
+    - For that we need 
+
+# CommonJS can load JSON file but ESM cannot.
+
+# Reference: https://www.youtube.com/watch?v=mQXFavXUcUo
+# https://www.youtube.com/watch?v=kT2mSjAcYxM&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8&index=16
+# https://www.youtube.com/watch?v=V9sKRD5V1As&list=PLwGdqUZWnOp0hSGwasCjbrWSPrEKqB_kz&index=21

@@ -1,0 +1,8 @@
+- nodemon
+- express
+- mongoose
+- path
+- fs
+- ejs
+- hbs
+- pug

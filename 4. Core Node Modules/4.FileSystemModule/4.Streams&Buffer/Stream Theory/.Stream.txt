@@ -1,0 +1,69 @@
+> Stream:
+    a small, narrow river.
+    a continuous flow of liquid, air, or gas.
+    
+
+
+> Verb:
+    Run or flow in a continuous current in a specified direction.
+    transmit or receive (data, especially video and audio material) over the internet as a steady_manner, continuous_flow.
+
+
+
+# Streaming means listening to music or watching vedio live in 'real time', instead of downloading a file to your computer and watching it later.
+    - IPL Streaming partner: StarSport
+    - Youtude watching vedio is streaming.
+    > Stream types: readable, writeable, duplex, transform.
+
+# HugeFile(source) --> Download(take more time) --> Process(watch) ===> PlayBack
+# HugeFile(source) --> chop that massive data into pieces(buffer_chunk) --> Stream(chunk of buffer data) --> buffer_chunk gets stored in buffer memory of destination device --> buffer chunk is passed for Processing(watch) when buffer storage in destination gets full.
+
+# HugeFile(source):
+    - video file,
+    - audio file,
+    - text file,
+
+
+
+# Online streaming vs OffLine streaming.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# There are four fundamental stream types in Node. js: Readable, Writable, Duplex, and Transform streams.
+# 4 types of Stream in node:
+    - readable
+    - writeable
+    - duplex
+    - transform
+
+
+
+PlayBack vs Streaming vs Live-Streaming
+Streaming partner (netflix,hoststar,kantipur,AP1HD)
+chunk by chunk contineous fashion
+buffering/streaming
+readable,writeable,duplex,transform stream.
+
+
+
+streaming: sending pre-stored data.(from source to destination)
+buffering: holding pre-passed data in destination's buffer memory, send from sources.
+processing: processing pre-stored data in buffer storage.
+
+read and write at the same time.
+
+
+# Stream is used for data handling: (memory and time efficiency)
+    - end-to-end information exchange in optimize way(reading/writing files,network communication).
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Reference:
+    - https://www.youtube.com/watch?v=AeJzoqtuf-o
+    - https://www.youtube.com/watch?v=RXk9tndVOAg
+    - https://www.youtube.com/watch?v=FZOEL5nByYg
+    - https://www.youtube.com/watch?v=ut74oHojxqo ==> character size?
+

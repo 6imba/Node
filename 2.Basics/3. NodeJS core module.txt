@@ -1,0 +1,8 @@
+- Like JavaScript_Library, NodeJS_Module.
+
+- NodeJS Core Module are built-in modules that consist of set of properties,fucntion,object that you can include into your program,
+  by importingwith the help of require keyword without any installation.
+
+- Some of NodeJS Core Module: fs, path, os, events, http, URL etc.
+
+-

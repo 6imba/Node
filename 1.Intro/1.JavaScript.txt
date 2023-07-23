@@ -1,0 +1,44 @@
+- JavaScript, often abbreviated as JS, is a programming language commonly used to create interactive effects within web browsers.
+
+- Vanilla JS: Plain, Default, Pure, Simple, Undiluted. Vanilla is default icecream color.
+
+- Vanilla JavaScript or just JavaScript refers to ES5/6/7, just raw JavaScript.
+- Using "VanillaJS" means using plain JavaScript without any additional libraries like jQuery.
+- People use it as a joke to remind other developers that many things can be done nowadays without the need for additional JavaScript libraries.
+
+- VanillaJS is a term for library/framework_free_javascript.
+- In constrast:
+- Non-vanilla JavaScript includes Libraries and frameworks like jQuery, React, Angular, Typescript, etc.
+
+- JavaScript has several frameworks and Libraries of its own, which includes
+    - React JS (Leading and Most Popular)
+    - Angular
+    - Vue Js
+    - JQuery etc.
+    - Backbone
+    - Node
+    - Ember
+    - Meteor
+
+# JavaScript:
+    - Vanilla JavaScript,
+    - Non-Vanilla/Diluted Javascript.
+
+    - Vanilla JS: Plain, Default, Pure, Simple, Undiluted. Vanilla is default icecream color.
+    - Non-Vanilla JS: Diluted Javascript(jQuery, React, Angular, Typescript, etc)
+
+
+# Reference:
+    - https://unclebigbay.com/difference-between-vanilla-javascript-and-javascript-explained
+
+# JavaScript Executing Flow:
+    - Vanilla JS is used to built apps that runs inside our browser.
+    - So every browser out there has what we call JS-Engine that takes JS-code and convert it into Machine-code.
+    - Some of JS Engine used by avialable browsers ==> Microsoft Edge(Chakra), Mozilla Firefox(Spider Monkey), Chrome(V8). ==> V8 is fastest one.
+    - Because of variation in JS-Engine same JS code may behave differently in different browser.
+    - Therefore, browser provides runtime environment for JavaScript code.
+        - (For example: In browser we have -window and -document object that provides environment to run JS code)
+
+# Simply, browser provides runtime environment to run JavaScript code on client-side.
+    - In constrast,
+# Node provides runtime environment to run JavaScript code on server-side(outsdie browser).

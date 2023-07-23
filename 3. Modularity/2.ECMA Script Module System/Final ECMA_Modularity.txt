@@ -1,0 +1,23 @@
+# Named Exports:
+    - 1. In-line individually:
+        > export const name = "Jesse";
+        > export const age = 40;
+    - 2. All at once at the bottom:
+        > const name = "Jesse";
+        > const age = 40;
+        > export {name, age};
+    * Import named exports from the file person.js:
+        > import { name, age } from "./person.js";
+
+# Default Exports:
+    const message = () => { };
+    export default message;
+    * Import a default export from the file message.js:
+        > import message from "./message.js";
+
+    export default function functionName() { /* … */ }
+
+# Aggregating modules
+    export * from "module-name";
+
+# 

@@ -1,0 +1,16 @@
+# import & export using CommonJS module. ==> require()
+# import & export using ES6. ==> import from
+
+# Export Using ES6 Module:
+    1> .mjs(file_name)
+    2> Node_JS: package.json
+        {"type":"module"}
+    3> Vanilla_JS: <script type="module" src="script.js">
+    # default export & named export.
+
+# Import Using ES6 Module:
+    1> import add from 'http';
+    2> import {add, sub, name, mul} from "./1.Export.mjs";
+    3> import * from "./1.Export.mjs";
+
+# 

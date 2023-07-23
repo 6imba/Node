@@ -1,0 +1,50 @@
+- CommonJS Module(.js) vs acrra ECMAScript modules(.mjs)?
+- importing common js module: require('modulepath+name')
+- importing ICMA script modules: import {propertiesoORmethods} from 'modulepath+name''
+- IMAC Script module use import to load es6module and common JS modules use require to load common js module.
+
+
+
+# Comman JS module:
+- module1.js:
+    function method1(){
+        return true;
+    }
+module.exports = method1;
+- module2.js:
+    const xMethod = require("./module1")
+
+
+
+# IMAC script module:
+- module1.mjs:
+    function method1(){
+        return true;
+    }
+    export {method1};
+- module2.mjs:
+    import {method1} from './module1.mjs'
+
+
+
+
+# Default export in Comman JS module: no default export
+
+
+# Defaulte export in IMAC script module:
+- module1.mjs:
+    export default function method1() {
+        return true;
+    }
+- module11.mjs:
+    function method11() {
+        return true;
+    }
+    export default method11
+- module2.mjs:
+    import method1 from './module1.mjs'
+    import method11 from './module11.mjs'
+
+
+
+

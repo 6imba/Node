@@ -1,0 +1,63 @@
+# SetUp node in your Computer or system:
+
+    1. Check node version if installed in system.
+        -> node -v OR node --version
+
+    2. Download node from nodejs.org.
+
+    3. - Create a .js file,
+       - Activate terminal in the dir when .js file exist,
+       - Run command to execute that particular .js file,
+            -> node fileName (i.e: node cal OR node cal.js)
+
+    4. jshint app.js (what is jshint?)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# To execute the js code in console/terminal we need to download node into your system,
+# But if want to execute the js in runtime-environment(NodeJS), you have to initialize node first.
+# if want to execute additional node.js features(third-party-node-package), install it which will automatically create new-folder:(node_modules) and file:(package-lock.json).
+
+# SetUp node(runtime environment) for your project:
+
+    1. Execute the js|Node.js in runtime-environment, you have to initialize node first.
+
+    2. To initialize node project.
+        - npm init ==> create (package.json) file (boiler plate basic package.json)
+        - npm init -y ==> create (package.json) file by skiping credentials
+
+    3. Install different dependencies  packages: (when you install any third-party-npm-package node_modules folder and package-lock.json file is create which track all those install dependencies.)
+        - npm install express
+        - npm install express, mongoose, fs.
+        => automatically create new-folder:(node_modules) and file:(package-lock.json).
+        => (package.json), (node_modules), (package-lock.json) ==> Packages and files initialized for node project, which track all those install dependencies.
+        => before we needed --save flag to save install dependencies in package.json file.
+
+    4. Install dev-dependencies:
+        - Dev-dependencies are the packages/tools that are useful in development level. (like nodemon)
+        - npm install nodemon --save-dev (nodemon is a package that restart node server every time your project file changes.)
+
+    5. nodemon setup:
+        - once you install nodemon you can run your node server simple by activating terminal at the dir when node-server.js file exist & run command.
+            - nodemon server.js
+        OR
+        - you can mention node server file path in srcipt of package.json.
+            -   "scripts": {
+                    "devServer": "nodemon src/server.js"
+                }
+        - then run npm command.
+            - npm run devServer
+
+        - nodemon -v: Check version of nodemon.
+        - ctrl + c ==> stop nodemon
+
+        - Like liveserver for browser runs script code automatically when we edit and make a save in html.css and js file.
+        - Similarly nodemon runs script code automatically when we edit and make a save in node.js files.
+
+        - npm install nodemon -g ==> install nodemon globally in our OS. with -g flag.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# node app.js ==> JavaScript environment.
+# npm  run app.js ==> JavaScript runtime-environment.
+

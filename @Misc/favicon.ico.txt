@@ -1,0 +1,5 @@
+- Modern browsers will show an icon to the left of the URL. This known as the 'favicon. ico' and is typically fetched from website.com/favicon.ico. Your browser will automatically request it when browsing to different sites. If your browser receives a valid favicon.
+
+- how to stop favicon request?
+
+- 

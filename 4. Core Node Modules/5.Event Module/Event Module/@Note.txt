@@ -1,0 +1,52 @@
+# perform_action->trigger_event->listen_event->invoke_handler
+# detect|fire|listent|trigger event
+# define event listener ->  trigger event.
+
+- Node has built-in module call Events where you can create,trigger,listen for your own serverside_backend_events.
+    - serverside_backend_events: server_request_hit, page_Load, file_load, etc.
+
+------------------------------------------------------------------------------------------------------------------------
+
+# Module Name: events ==> require('events') rexports the event constructor. 
+    > const EventEmitter = require("events");
+# Event constructor: new EventEmitter() => create new event instance.
+    > const event = new EventEmitter();
+# Define event and it's  listener.
+    > event
+        .on("greet", () => {
+            console.log("Namaste!")
+        })
+        .on("bio", () => {
+            console.log("Name: Amir")
+        })
+        .on("bio", () => {
+            console.log("Stack: MERN")
+        })
+        .on("check", (statusCode, statusMessage) => {
+            console.log(`Status: ${statusMessage} (${statusCode})`)
+        });
+# fire, hit, trigger, detect, emit to event:
+    event.emit("greet"); // single callback
+    event.emit("bio"); // multiple callback
+    event.emit("check", 200, "ok"); // parameter callback
+
+------------------------------------------------------------------------------------------------------------------------
+
+# module(events) exorts constructor(EventEmitter), and we create new instance(event) using constructor(EventEmitter). 
+
+------------------------------------------------------------------------------------------------------------------------
+
+- Every node_core_modules belongs to Event_Module.
+
+- When event is detected, event-listener is trigger.
+- When event is detected, event.on("event_name", ()=>{}) is trigger.
+
+- .on() funtion to write event_handler/event_listener.
+
+- event.emit("event_name")
+- event.on("event_name", ()=>{})
+
+
+# Object
+# Events
+# EventEmitter

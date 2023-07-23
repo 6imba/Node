@@ -1,0 +1,30 @@
+- running single thread, non-blocking IO module, , not delay but deffer, intensional block-> readfilesync, callback computation,
+
+- inbuilt-module in node.js
+
+- common js module vs acrra ICMA script modules?
+importing common js module: require('modulepath+name')
+importing ICMA script modules: import {propertiesoORmethods} from 'modulepath+name''
+
+event driven architecture?
+
+v8, spider monkey => js engine
+node,js is not a framework or programming language but server side run time environment.
+
+run time environment for JS is different, when use it(Js) in client-side(browser) vs when use in server-side(node.js)
+
+* js + v8 ~ node
+* repl
+-------------------------------------------------------------------------------------------------------------
+
+
+- I/O intensive. ==> client request to server and server request to other resources(db, another server, file)
+- Node.js is a single thread application. Means node.js has only one threads.
+- Non-nlocking I/O
+- Asynchronous
+- Callback
+- CPU intentive work X
+- I/O intentive work (Node.js)
+- event driven application
+- Node.JS Asynchronous File System Core Modules
+-------------------------------------------------------------------------------------------------------------

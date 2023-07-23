@@ -1,0 +1,5 @@
+# https://www.geeksforgeeks.org/where-should-secret-keys-should-be-stored-for-a-node-js-app/
+
+- The best way to handle sensitive_data or credentials like API keys with Node.js is to use environment variables.
+- environment variable is stored in .evn file.
+

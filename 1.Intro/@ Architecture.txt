@@ -1,0 +1,11 @@
+# Some concepts usage:
+    - (Blocking VS Non-blocking) Architecture,
+    - (Synchronous VS Asynchronous) Architecture,
+    - (Single Threading VS Multi Threading) Architecture,
+    - (IO Intensive VS CPU Intensive) Operation/workload.
+    - (Open-sources VS Closed-sources) Programming Languages,
+    - (Cross-plateform VS Single-platform) Software,
+    - (Cross-plateform VS Single-platform) Programming Languages,
+    - (Interpreted vs Compiled) Programming Languages,
+    - (Relational and Non-Relational) Database,
+    - (SQL VS NoSQL).

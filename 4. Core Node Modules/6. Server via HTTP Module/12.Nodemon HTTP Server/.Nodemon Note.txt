@@ -1,0 +1,30 @@
+# Reference:
+    - https://www.youtube.com/watch?v=yPeMYFpYIuw&list=PLbGui_ZYuhijy1SpwtIS9IwL6OJdbr4kE&index=16
+    - https://www.npmjs.com/package/nodemon
+
+# Problem: every time we edit our server file we need to restart our running_server_file to see the changes.
+    - Solution: nodemon package.
+
+# Install node package globally or locally:
+    > npm install --save-dev nodemon
+    > npm i -g nodemon 
+
+# Configure nodemon locally:
+    > npm install --save-dev nodemon
+        
+    - since we have not installed nodemon globally its not recognized. So write script into package.json to run dev_nodemon:
+    - In package.json file:
+        {
+            "scripts": {
+                "devServer": "nodemon nodeServerFileName"
+            },
+        }
+
+    - Then run node server via nodemon:
+        > npm run devServer
+        PS F:\4. 𝕀𝕋\5. MERN\1. NodeJS\7.Nodemon> npm run devServer
+
+    - Browse ==> http://localhost:8006/
+
+# Problem: every time we edit our server file we need to restart our running_server_file to see the changes.
+    - Solution: nodemon package, but you should reload the page in browser.

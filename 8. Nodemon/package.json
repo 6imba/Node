@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "production_run_server": "node server_node_file",
+    "development_run_server": "nodemon server_node_file"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

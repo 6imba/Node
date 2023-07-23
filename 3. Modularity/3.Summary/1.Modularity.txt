@@ -1,0 +1,149 @@
+# Module & Modularity Concept:
+    - In node.js every individual file(.js, .json, etc) is called module.
+
+    - Modularity in js means to split the code in different files.
+    - When a single file contains huge line of codes it create confussion and difficulty while read the code.
+    - So here comes the concept of modularity which simply means to split/break related code/statement accross different modules/files.
+    - And each individual files are call modules.
+
+    - Modules concept in JavaScript begins from ES6.
+    - Modularizing an application. like moving each classes in seperate files. due to which our application is more maintainable.
+
+    - A file/module can contains variables, functions, classes, objects etc.
+    - And scope of those variables, functions, classes, objects etc. present inside a module/file is private untill you export it.
+    - Scope private mean that variables, functions, classes, objects etc. of a individual file/module can be used inside that particular file/module only.
+
+    - Therefore, make variables, functions, classes, objects etc inside a individual module/file public by exporting it and import the exported variables, functions, classes, objects from other module.
+        - 1. export ==> module.exports = variables, functions, classes, objects etc
+        - 2. import ==> require('file-relative-path and name')
+
+    - Make class, function in module public by exporting it and import the exported class, function from other module.
+    - Default exports.
+    - Name export.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# Node Module system:
+    Q. How many types of modules are there in JavaScript?
+        - JS includes three types of modules: Core Modules, Local Modules &  Third Party Modules.
+
+    1. CommonJS module.js System:
+        > Core Modules: Built-in core node.js module that is to be imported without any installation ==> (os, fs, path, url, http, util, querystring)
+        > Local Modules: Custome node.js module (self define/created module/node-file) that is to be imported/exported.
+        > Third Party Modules: External modules thats needs to be downlaod&installed before importing . (express, ejs, nodemon, hbs, ...). When download Third_Party_External_Modules it creates some files/folder by default(node_modules, package-lock.json, package.json, etc).
+        - loading CommonJS module.js with require
+
+    2. ECMA script module.mjs System: (.mjs)
+        - loading ECMA script module.mjs with import
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+# Loading Modules:
+    - loading CommonJS module.js with require,
+        - loading Core_Node.js Modules with require('moduelName') ==> no path needed.
+        - loading Local_Node.js Modules with require('relative-path/filename') ==> "./, ../, ../../, /" path needed
+        - loading Third_Party_External_Modules with require('moduelName') after installation(npm install module_name)==> no path needed
+
+        -> Therefore, you need to specify path to import Local Node.js Modules but you do not need to specify the path to import Core Node.js Modules && Third Party Modules(npm install) in the require() function.
+
+# loading custome node.js module with require('relative-path/filename')
+    * require():
+        - require function in node, takes one argument. ie.(name/path of target module that we need to load)
+        - require function returns (variables, functions, classes, objects etc) that is exported from the ('targeted module').
+        - You must specify ./ as a path of root folder to import a local module.
+        - However, you do not need to specify the path to import Node.js core modules or NPM modules in the require() function.
+
+
+    * require('./fileName') ~ same folder ~ require('./fileName.js')
+    * require('./subFolder/fileName') ~ sub folder
+    * require('../fileName') ~ parent/root folder/ one-level-up-dir
+    * require('../../fileName') ~ two-level-up-dir
+    * require('../anotherfolder/fileName') ~ file in another folder
+    * require('../anotherfolder/subdir/fileName') ~ file in subfolder of another folder
+    * ????????? ~ root-dir
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# require('') function in node:
+    - In NodeJS, require() is a built-in function to include/import other modules into existing program/module/file.
+    - require() statement basically reads a JavaScript file, executes it, and then proceeds to return the export (variables, functions, classes, objects etc).
+    - what does require() returns depends on what is exports.
+    - so simply what require('') returns, depends on what is exported by another module.
+    - Node. js follows the CommonJS module system bydefault, and the built-in require() function is the easiest way to include/import other modules into existing program/module/file.
+    - The basic functionality of require is that it reads a JavaScript file, executes the file, and then proceeds to return the exports object.
+
+    Q. CommonJS module system?
+        -> Node Module system before ES6.(way how node use modularity concept before es6)
+
+    > Implementation of import:
+        - importing/requesting exported object from external module:
+            * const amirObj = require("./2.second")
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# exports:
+    - exports() is is a built-in function in Node.JS is used to export any literal(string,integer),function,object.
+    - It is used to export JavaScript_Variables into other NodeJS program/file/module.
+        > here, JavaScript_Variables means any data of any datatype (Number,String,Boolean,Object,Class...etc).
+
+    > Implementation of export:
+        - exporting object to external module:
+            * amir = { name: "Amir Shrestha", no: 6, developer: true }
+            * module.exports = amir;
+
+    > Exporting module can export: variables, functions, classes, objects.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+    - The module keyword is an object that represents the current module.
+    - The exports keyword is an object that exposed the mentioned variables of the current module to another module that imports this module.
+    - As exports is an object. So, you can attach properties or methods to it.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# A file/module can contains:
+    - variables,
+    - functions,
+    - classes,
+    - objects,
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+# Ways to export:
+    - Default exports concept.
+    - Name export.
+    - module wrapper function :
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# Reference:
+    - https://www.tutorialsteacher.com/nodejs/nodejs-modules
+
+
+// Node.js Modules
+
+// What is a Module in Node.js?
+// Consider modules to be the same as JavaScript libraries.
+// A set of functions you want to include in your application.
+
+// Built-in Modules
+// Node.js has a set of built-in modules which you can use without any further installation.
+// Look at our Built-in Modules Reference for a complete list of modules.
+
+// Include Modules
+// To include a module, use the require() function with the name of the module:
+// var http = require('http');
+
+// Create and Include Your Own Modules
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# Modules:
+    - Common JS Module(.js): Local_Module, Core_Module, Third Party External Modules.
+    - IMAC_Script_Module(.mjs):
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+# Modules are of three types:
+    - Core Modules
+    - local Modules
+    - Third-party Modules
+

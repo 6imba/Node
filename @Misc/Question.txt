@@ -1,0 +1,44 @@
+
+
+Q. Common JS module vs ES module?
+
+Q. How to return value from fs.readdir()'s callback.
+
+Q Why is typof every require() module is object?
+    - console.log(typeof(require('path')))
+
+
+
+Q. What is package.json file? (initializing node ==> npm init)
+Q. Installing ang packages creates (package-lock.json, node_modules) byut why and for what?
+
+Q. Why is my node server excuting two time. ==> PS C:\Users\DELL\Desktop\1. NodeJS\5. Node HTTP Module\HTTP Server> node .\8.http_server_RequestObject.js
+    - it console two time: 1_for_root & 2_for_favicon.
+
+`
+Q. Some of node built-in modules and their returns?
+    - console.log(os)           ===> {}
+    - console.log(fs)           ===> {}
+    - console.log(http)         ===> {}
+    - console.log(exports)      ===> {}
+    - console.log(path)         ===> <ref *1> {}
+    - console.log(__filename)   ===> <ref *1> {}
+    - console.log(__dirname)    ===> <ref *1> {}
+    - console.log(console)      ===> <ref *1> {}
+    - console.log(global)       ===> <ref *1> Object [global] {}
+    - console.log(console.log)  ===> [Function: log]
+    - console.log(require)      ===> [Function: require] {}
+    - console.log(require('url').URL) ===> [class URL]
+    - console.log(module)       ===> Module {}
+    - console.log(__filename)   ===> index.js
+    - console.log(__dirname)    ===> C:\Users\DELL\Desktop\NodeJS\3. Modularity
+
+Q. Why can't we console reserved keyword:
+    - console.log(if)
+    - console.log(&)
+    - console.log(for)
+    - console.log(function)
+    - console.log(var)
+    - console.log(let)
+    - console.log(try)
+    ===> Uncaught SyntaxError: Unexpected token '&'

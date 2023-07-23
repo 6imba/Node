@@ -1,0 +1,5 @@
+- "type": "module" ==> if you want import ES6 module.
+
+- "scripts": { "devServer": "nodemon src/server.js"} ==> if run node app server with npm command.
+
+

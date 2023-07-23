@@ -1,0 +1,51 @@
+# Reference: https://www.youtube.com/watch?v=xD3V3Uf9HPI
+
+- Like pip for python, composer for php, chocolaty for window, similarly npm for node.
+- npm is package manager for JavaScript.
+- npm makes JavaScript_Developer easy to share|reuse & update their code
+
+- npm helps to install, uninstall, create mudules|packages.
+- Simply npm manages JavaScript packages.
+
+Q. So how to install npm?
+    - npm is installed with node.js, which means npm comes bundles with node and automatically gets downloaded at the time when we install node in our system.
+    - download long term support version of node.
+
+# Check if npm is installed in your system:> npm -v
+# Update npm: npm install npm@latest -g
+# Help: nmp help
+
+# See all avialable npm packages & ways to install them: https://www.npmjs.com/package/package
+
+# NPM command:
+    - npm -v
+    - npm install npm@latest -g
+    - npm help
+    - npm i express
+    - npm install express
+    - npm install express mongoose ejs
+    - npm uninstall express
+    - npm install mongoose --save
+    - npm install nodemon --save--dev
+    - npm i --save--dev nodemon
+    - npm list => To check for all installed packages and its dependencies.
+    - npm ls
+    - npm la
+    - npm ll
+    - npm list --depth=0
+    - npm list --depth=1
+    - npm list --prod
+    - npm list --prod --depth=1
+    - npm list --global
+    - npm list -g => To check for all globally installed packages and its dependencies. Here, -g is called global flag.
+    - npm list --depth=0 --json
+
+- npm list            ==> to show the installed packages in the current project as a dependency tree.
+- npm list --global   ==> to list the global packages.
+
+- npm init Or npm init -y ==> install/initialize your package manager. (i.e package.json files)
+    -(here -y flag skip credentials)
+    - if our foldername has capital letter -y flag will not work, as npm doesnt allow capital letters.
+
+- npm uninstall -g nodemon
+- npm install touch-cli -g

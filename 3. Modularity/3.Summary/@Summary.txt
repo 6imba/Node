@@ -1,0 +1,23 @@
+# Modules are of three types:
+    - Core Modules
+    - local Modules
+    - Third-party Modules
+
+# Way of using modular system:
+    - Common JS module System => require()
+    - ECMA-Script module System => export()
+        # Way to export/import:
+            - name_export
+            - default_export
+
+
+
+#Export:
+    - default export VS named export
+    > exports.SimpleMessage = 'Hello world';
+    > module.exports.SimpleMessage = 'Hello world';
+    > module.exports = {firstName, lastName};
+    > module.exports = msg ==> console.log(msg);
+
+
+#Every module can have two different types of export, named export and default export. You can have multiple named exports per module but only one default export.

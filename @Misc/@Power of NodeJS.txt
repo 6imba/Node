@@ -1,0 +1,8 @@
+# NodeJS is really powerful because of its core module that helps to:
+    - Play with file system,
+    - Play with file OS,
+    - Create server,
+
+# NodeJS is really powerful because of its core module and its function with both Synchronous and Asynchronous way.
+
+# 

@@ -1,0 +1,61 @@
+# NodeJS Web Server:
+    - Inorder to access any web_page of any web_site/web_application, that particular web_page/web_application must be hosted and must be avialable on the network of client also.
+    - So who host/server these web_site/web_application ==> server-side-program on computer is responsible to server/host these web_site/web_application.
+    - so we can write these server-side-program using various server-side-programming-language.
+    - and NodeJS is one of them.
+    - NodeJS has many CoreModule, what facilitates to write server-side program.
+    - NodeJS CoreModule called http, facilitates to host web-web_application.
+    
+# http module is used to host app.
+
+- Web server: ComputerSystem ==> Harware + Software(server-side-program) that host webapp.
+- Web server host webapp and handles all the HTTP-Request it receive.
+
+- NodeJS has CoreModule what facilitates to write server-side program, that handles HTTP-Request asynchronously.
+- Like ThirdParty_xammp for php, ThirdParty_IIS for asp.net similarly NodeCoreServer_module, to host webapp.
+
+# .createServer() methods returns server_instance.
+
+# Problem: every time we edit our server file we need to restart our running_server_file to see the changes.
+    - Solution: nodemon package.
+
+# Show info about server to developer in server-side:
+    callback in .listen() method.
+    server.listen(port,callback)
+
+# host app with dynamic port.(store port value in variable)
+
+
+***********************************************************************************************************************************************************
+
+# http module:
+    - you can create web server using .createServer() method of http module/objects.
+
+# RangeError [ERR_SOCKET_BAD_PORT]: options.port should be >= 0 and < 65536. Received 100001.
+
+
+# Request Object:
+    - req.url
+
+# Response Object:
+    - res.setHeader('Content-Type', 'text/html');
+    - res.setHeader('name', 'amir babu');
+    - res.end('<h1>Home page.</h1>');
+    - res.statusCode = 200;
+    - res.write()
+    - res.statusMessage = "Good Response";
+    - res.writeHead(202, "Good Response", {"Content-Type":"text/plain"})
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+> import http module
+> create Node HTTP Server(define response to particular request). // all server logic *****
+> listen to http request.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+# Programming language & its Server:
+    - php --> xampp
+    - laracel --> artisen
+    - django --> python manage.py runserver
+    - node --> create server from scratch, then run server node file. node server.js

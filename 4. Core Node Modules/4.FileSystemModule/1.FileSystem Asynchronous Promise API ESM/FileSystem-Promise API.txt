@@ -1,0 +1,2 @@
+> fs/promises API provides asynchronous file system methods that return promise.
+ 

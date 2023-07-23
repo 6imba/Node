@@ -1,0 +1,4 @@
+- The asynchronous callback APIs perform all operation asynchronously, without blocking the event loop, then invoke a callback function upon completion or error.
+
+> api('path',callback)
+

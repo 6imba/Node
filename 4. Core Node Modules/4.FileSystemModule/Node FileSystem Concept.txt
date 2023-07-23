@@ -1,0 +1,46 @@
+# Ways to handle file in node using 
+    - Synchronous: Stop Execution flow un till complete data is loaded.  ===>  (use data only once whole data is completely loaded.)
+    - Asynchronous(CallbackApi): Continue Execution flow even if complete data is not loaded.  ===>  (use data only once whole data is completely loaded.)
+    - Asynchronous(promiseBaseApi): Continue Execution flow even if complete data is not loaded.  ===>  (use data only once whole data is completely loaded.)
+        
+    # Stream: Continue Execution flow even if complete data is not loaded.  ===>  (use data continueosly by loading stream(small piece of whole_data) .)
+
+
+
+# Some of API of fs module in node:
+    - fs.open()
+    - fs.ReadFileSync()
+    - fs.WriteFileSync()
+    - fs.AppendFile()
+    - fs.createReadStream() -> stream.Readable
+    - fs.chmod()
+    - fs.write()
+
+
+
+> synchronous ==> api()
+> asynchronous callback ==> api('params',callback)
+> asynchronous promise ==> await api('params')
+
+
+
+# You can import fs module in two ways:
+    1. CommonJS module system: const fs = require('fs')
+    2. EcmaScript2015 module system: import fs from 'fs'
+
+
+
+# Import Synchronous&Asynchronous_API from fs module whereas import Promise_base_API from fs/promise module.
+    1. import fs from 'fs'
+    2. import fsp from 'fs/promises'
+
+
+
+# ESM VS CJSM:
+    # CJSM:
+        - SyntaxError: Cannot use import statement outside a module.
+        - SyntaxError: await is only valid in async functions and the top level bodies of modules
+    # ESM
+        - ReferenceError: __dirname is not defined in ES module scope
+        - ReferenceError: __filename is not defined in ES module scope
+        - ReferenceError: require is not defined in ES module scope, you can use import instead

@@ -1,0 +1,21 @@
+# Promise:
+    promise
+        .then()
+        .then()
+        .catch()
+
+# Event:
+    Event
+        .on()
+        .on()
+
+# Requests:
+    requests
+        .on()
+        .on()
+
+# Object:
+    object
+        .method1()
+        .method1()
+    ????????????????????

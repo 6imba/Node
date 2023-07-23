@@ -1,0 +1,7 @@
+const fs = require('fs')
+// console.log(fs)
+console.log(fs.readFileSync)
+console.log(fs.readFile)
+console.log(fs.writeFile)
+console.log(fs.createReadStream)
+console.log(fs.statSync)

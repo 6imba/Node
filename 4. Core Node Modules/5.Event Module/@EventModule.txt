@@ -1,0 +1,65 @@
+- Node has a core module call events, which powers to create,fire and listen to custom events.
+
+
+
+// import simple variable/object:
+    const fs = require('fs')
+    const path = require('path')
+    const http = require('http')
+// import class:
+    const EventEmitter = require('events')
+
+
+
+# Working with event module:
+    const event = require('events'); //1. import event event_module/object.
+    const emitter = new event.EventEmitter(); //2. construct event object via constructor class from event_module/object.
+        or
+    const EventEmitter = require('events'); //1. import event constructor class from event module.
+    const emitter = new EventEmitter(); //2. construct event object
+
+
+# Create and Fire event.
+    const EventEmitter = require('events'); //1. import event constructor class
+    const emitter = new EventEmitter(); //2. construct event object.
+    emitter.on('eventName', (eventParam) => console.log('Event Listener called !', eventParam)); //3. Create event(Register a listener) // define/register/create/listen event
+    emitter.emit('eventName', {id: 1, url: 'http://'}); //4.Fire event() Raise an event)
+
+
+# .on function is use to listen to any event of an object in node:
+    > var file = require('fs').createReadStream('./demofile.txt');
+      file.on('open', function () {
+        console.log('The file is open');
+      });
+
+    > const emitter = new require('events').EventEmitter(); //2. construct event object.
+      emitter.on('eventName', (eventParam) => console.log('Event Listener called !', eventParam)); //3. Create event(Register a listener)
+
+
+
+# .emit function is use to fire to any event of an object:
+    > open event gets fire automatically when createReadStream method is invoked.
+    > emitter.emit('eventName', {id: 1, url: 'http://'});
+
+
+
+# object.on('event_name',callback) - (you have to know does particular event get fires)
+# object.emit('event_name',callback,params)
+# object.once()
+# object.off()
+# object.pause()
+# object.resume()
+# object.end()
+
+
+
+An event is a signal that indicates that something has happen in our application
+
+For example in node we have class called HTTP that is used to built a web 
+So we listen on a given port and every time we receive request on that port that HTTP class raises an 
+Now our job is to respond to that event
+
+Events Module
+Event Arguments
+Extending EventEmitter
+

@@ -1,0 +1,30 @@
+# Naming Convention for filenames(.js, .html, .css):
+	- Regarding filenames most common are short, lowercase filenames.
+	- If your file can only be described with two_words most JavaScript projects use an underscore as the delimiter.
+
+# Naming Convention for variables:
+	- Regarding variables, the same "rules" apply as for filenames.
+	- Prototypes or classes, however, should use camelCase.
+
+# Naming Convention for package folder and files:
+	- Use kebab-case for all package, folder and file-names(package-lock.json).
+
+	- Packages cannot contain uppercase letters. Therefore, camelCase should never be used.
+	- This leaves snake_case and kebab-case.
+	- kebab-case is by far the most common convention today.
+	- The only use of underscores is for internal node packages, and this is simply a convention from the early days.
+
+------------------------------------------------------------------------------------------------------------------------------------
+# Conclusion:
+	- variable => camelCase.
+	- Prototypes and Classes ==> CamelCase.
+	- custome filenames ==> under_score
+	- custome folder ==> under_score
+	- package filenames ==> kebab-case
+	- package folder ==> kebab-case
+	- internal node packages ==> under_scores
+
+------------------------------------------------------------------------------------------------------------------------------------
+# Reference:
+	- https://newbedev.com/node-js-project-naming-conventions-for-files-folders
+

@@ -1,0 +1,14 @@
+{
+  "name": "4.-core-node-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1. osModule.js",
+  "scripts": {
+    "production_run_server": "nodemon 15.requestRouting"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

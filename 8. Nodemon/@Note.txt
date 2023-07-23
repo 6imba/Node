@@ -1,0 +1,18 @@
+// https://www.youtube.com/watch?v=yPeMYFpYIuw&list=PLbGui_ZYuhijy1SpwtIS9IwL6OJdbr4kE&index=16
+// https://www.npmjs.com/package/nodemon
+
+// npm install --save-dev nodemon
+
+- since we have not installed nodemon globally its not recognized. So write script into package.json to run dev_nodemon:
+- In package.json file:
+    {
+        "scripts": {
+            "production_run_server": "node server_node_file"
+        },
+        "devDependencies": {...}
+    }
+
+- Now:
+    PS F:\4. 𝕀𝕋\5. MERN\1. NodeJS\7.Nodemon> npm run development_run_server
+
+- Browse ==> http://localhost:8006/

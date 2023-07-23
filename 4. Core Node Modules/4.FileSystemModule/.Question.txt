@@ -1,0 +1,8 @@
+Q. what cause error while readFile() & how to handle it?
+
+Q. does async function always return undefined?
+Q. does async function always return promise?
+Q. When does asynchronous function return promise and when return undefined?
+
+# When you console an object you can only see its property not methods.
+

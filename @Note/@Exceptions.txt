@@ -1,0 +1,3 @@
+- select statement and run node creates a new file called as tempCodeRunnerFile.js if we have code runner extension in our vscode.
+
+# see the list of methods and property of an object:- console.log('hoi: ',Object.getOwnPropertyNames(articles))

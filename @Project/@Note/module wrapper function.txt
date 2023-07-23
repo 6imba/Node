@@ -1,0 +1,23 @@
+# Anonymous_Function:
+    ==> function (a, b) {return a * b};
+        - Anonymous function: a function without a name.
+        - where they are used are in function_expression, callback, etc.
+
+# Self-Invoking_Functions:
+    ==> (function () {
+            let x = "Hello!!";  // I will invoke myself
+        })();
+            - anonymous self-invoking function.
+
+# Module_Wrapper_Function:
+    Q. How can we access module, exports, require in module as they are not even global variable?
+    A> Because of Module_Wrapper_Function.
+        - In Node every file is module & all the member_variable are private to that particular module only.
+        - So we use import|export concept to access these private data_memeber.
+        - This is because of module wrapper function as node wrap all the datamember in module/file into a function.
+        - ( function(){} ) ==> Module_Wrapper_Function
+        - (): grouping operator
+        - ( function(){} ) ==> ( anonomous function )
+        - ( function(exports, require, module, __filename, __dirname){} ) ==> ( function(*args){} )
+
+Q. IS this Module_Wrapper_Function concept avialable in ESM alao? If not how to access these arguments?

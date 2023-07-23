@@ -1,0 +1,2 @@
+- catch block is not catching the fsp.mkdir error, as fsp.mkdir is asynchronous so it skips err. beforecatch can actuallu catch err.
+- 

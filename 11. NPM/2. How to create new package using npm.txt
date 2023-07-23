@@ -1,0 +1,38 @@
+Q. How to create new package, in which new package-json file created using npm
+    - How to create new package ?
+    - How to create new package, in which new package.json file created?
+    - How to create new package, in which new package.json file created using npm.
+    - What is package.json file?
+    - What is dependencies in package.json file.
+
+Q. How to install, uninstall, update & delete packages.
+
+Q. How to set-up a new oe exiting package.
+    > npm init
+        - provide credential or just skip with default value.
+        - used to setup a new or exiting JavaScript Package.
+        - It creates package.json file in active project folder.
+    > npm config
+        - configure npm, environment variable, package.json etc.
+        - npm config list
+        - npm config list -l
+        - npm config set key "value"
+        - etc
+    > npm install <packageName>@<tag>/<version>
+        - It creates package-lock.json file in active project folder.
+        - npm install express
+        - npm install express@latest
+        - npm install express@12.1.1
+        - npm i express
+        - npm i express --save-dev
+        # package.json hold the data of dependencies and package-lock.json locks the version of the avialable dependencies.
+        # node_modules is the folder that store all the packages&file installed for project. At the time of pushing into git node_modules folder is not pushed.
+        # npm install
+        # package.json: hold the dependencies data.
+        # package-lock.json: locks dependencies version.
+    > npm uninstall <packageName> --save
+        - --save: flag
+    > npm update <packageName> --save
+    > npm docs lodash
+    > npm ls
+    > npm start

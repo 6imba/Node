@@ -1,0 +1,18 @@
+- What when buffer memory gets full, then only buffer_chunk_data is passed on for processing.
+- What when buffer memory gets full?
+- what is the size of individual/per chunk?
+- is buffer_storage_size different for different application(youtube,messenger).
+
+
+
+- we can create a streams to read and write files in node.js
+- because the way buffer's stream work, our application performance increases.(request on node server)
+
+
+
+# Data handling ==> stream buffer: memory&time efficiency
+
+# Sources -> Stream data(vedio>break_into_small_piece_data(buffer_chunk))
+
+https://www.youtube.com/watch?v=Mqj--ur2GdY&list=PLynWqC6VC9KMwdsbBIG68YEBMlUrTwed-&index=22
+

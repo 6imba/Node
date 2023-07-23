@@ -1,0 +1,11 @@
+# Node.exe ==> C++ + V8 (V8 engine embedded into C++ code.)
+
+# When to use Node.js?
+    - I/O bound (Disk,Network,Database),
+    - Data Streaming Application,
+    - Real time chat Application,
+
+# Features of NodeJS:
+    - accepts multple request at once.
+    - NodeJS can accepts multple request at once even thogh being single threaded via concept(event_loop,non_blocking)
+

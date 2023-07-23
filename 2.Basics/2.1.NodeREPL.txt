@@ -1,0 +1,17 @@
+- REPL (READ, EVAL, PRINT, LOOP) is a computer environment similar to Shell (Unix/Linux) and command prompt.
+- Node comes with the REPL environment when it is installed.
+- System interacts with the user through outputs of commands/expressions used.
+- It is useful in writing and debugging the codes.
+- Therefore, REPL feature of Node.js is very useful in experimenting with Node.js codes and to debug JavaScript codes.
+
+- Inorder to #experiment_Node.js_code & #debug_JavaScipt_code, we need to enter into Node REPL.
+- So to enter into Node REPL ==> terminal command: node
+
+- (To exit, press Ctrl+C again or Ctrl+D or type .exit)
+
+- Double tab inside Node REPL will output all Node properties,methods,object,class,module.
+
+- type of name of the any Node properties,methods,object to see the its properties and methods if exist.
+
+# Reference: https://www.youtube.com/watch?v=uJOsl4x7pAo&list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8&index=4
+

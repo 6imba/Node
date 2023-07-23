@@ -1,0 +1,6 @@
+- globally installed packages
+- project dependencies
+- dev dependecncies
+- peer dependencies
+    > npm config set legacy-peer-deps true
+

@@ -1,0 +1,11 @@
+- The synchronous APIs perform all operation synchronously/waiting, with blocking the event loop, then execute further program upon completion or error.
+> api()
+
+
+
+> synchronous ==> api()
+> asynchronous callback ==> api('params',callback)
+> asynchronous promise ==> await api('params')
+
+
+

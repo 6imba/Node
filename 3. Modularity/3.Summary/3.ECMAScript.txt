@@ -1,0 +1,17 @@
+# Export: ECMA-ScriptModulesExport.mjs
+    export function func1(){
+        console.log('Hi I am func1!')
+    }
+    export function func2(){
+        console.log('Hi I am func2!')
+    }
+
+# Import: ECMA-ScriptModulesImport.mjs
+    import * as all from './ECMA-ScriptModulesExport.mjs';
+    all.func1();
+    all.func2();
+
+
+import { isEmpty } from 'lodash'
+import isArray from 'lodash/isArray'
+import isEqual from 'lodash/isEqual'

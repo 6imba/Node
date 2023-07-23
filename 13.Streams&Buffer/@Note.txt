@@ -1,0 +1,7 @@
+- Streaming means listening to music or watching vedio live in 'real time', instead of downloading a file to your computer and watching it later.
+
+- IPL Streaming partner: StarSport
+
+- Youtude watching vedio is streaming.
+
+- Stream types: readable, writeable, duplex, transform.

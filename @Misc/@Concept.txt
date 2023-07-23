@@ -1,0 +1,4 @@
+- In case when need to include VanillaJS Library into our project we needed to link CDN or download it.
+- But in case of NodeJS we just need to import built-in modules with require keyword.
+
+- 

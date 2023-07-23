@@ -1,0 +1,138 @@
+# What is Node?
+    - Node.js is a open-source, cross-platform, run-time-environment for executing JavaScript code outside of a Browser.
+    - V8 embedded inside C++ program + additional modules ==> Node.js
+
+    - Quite often we use node to built backend-services(also called API).
+        - These(API) are the services that powers the client applications(like Web-App running in Web-Browser & Mobide-App running in Mobile-OS)
+        - End user see and interract with surface GUI of these web apps && And the surface of these app need to communicate with the servies(API) sitting on the Back-End-Server. Here comes the use of node in backend-server side.
+    - Node is use to built highly scalable, data-intensive and real-time apps, that power client applications.
+    - Therefore, we use node.js to built back-end services(API,),
+    - Node.js has some object(-fs.readFile(), -http.createServer()) that provides us environment to run JS code outside browser.
+    - Node do not have window object and document object.
+
+    - Both Chrome and Node share the same JS Engine(V8) but provide different run time enviroment to run JS.
+    - The runtime-environment/runtime-system is the environment in which a program or application is executed.
+
+    - #WebBrowser(Chrome,FireFox,Opera,Explorer,Brave) is a runtime enviroment for running #Vanilla-JS in #Client-Side whereas #Node is a runtime enviroment for running #Non-Vanilla-Diluted-JS in #Server-Side/outside-browser.
+    - See node is not programming language instead its platform/environment on top of which ServerSide-Non-Vanilla-Diluted-JS is executed.
+
+    - Therefore, Node is a open-source & cross-platform, run-time-environment for executing JavaScript code outside of a Browser.[Used to built back-end services(API,) in case of Web Technologies]
+
+    - JS run in Node == Node.js
+    - && Framework of Node.JS is Express.JS.
+
+# Some other powerfull frameworks for building Backend-Services: Django(python), ASP.NET, Ruby&Rails, Laravel(php).
+
+# So why node?
+    - Node can be used for prototyping and agile development.
+    - Node can be used for building super fast and highly scalable Backend-Services.
+    - Node is used in production level by many big companies: PayPal, Uber, Netflix, Walmart etc.
+    - Node has largest ecosytem of open source libraries avialable.
+    - Cleaner, more consistent and JS in both front and backend.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Architecture of Vanila JavaScript:
+    - Single threaded,
+    - Blocking or Synchronous architecture.
+
+# Architecture of NodeJS(Non-Vanilla_Diluted_JS):
+    - Single threaded (event-based, Single threaded event loop) by default,
+    - Non-blocking or Asynchronous architecture.
+
+# Application of Node:
+    - I/O-intensive apps,
+    - data-intensive apps,
+    - real-time application
+
+- Node is highly scalable because of Non-blocking or Asynchronous architecture, I/O-intensive.
+- In contrast to Non-blocking or Asynchronous Architecture(Node.js), we have Blocking or Synchronous Architecture(ASP.Net).
+
+    - So, when request is made to a server, a thread is allocate to handle-that-requests(quering DB). Meanwhile that thread is also handle other request.
+    - In Node, when request is made to a server, Single thread is allocate to handle the multiple requests.
+    - Node application are asynchronous by default.
+
+    - Thread~Waiter, Server~Kitchen, Request~Customer-Order.
+    - Node application are asynchronous by default.
+    - In node we have single thread to handle all request.
+    - Event Queue.
+
+- Node should be used to built data-intensive and real-time application not CPU-intensive application.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Node.js is server technology with which we can do server programming. It is used to make:
+    - Static Server (HTML-file-server'serving static html page/file, ')
+    - Dynamic Web Application Server,
+    - Database Operation (NoSQL server, SQL server),
+    - Mobile Application Server,
+    - API Server,
+    - Authentication Server,
+    - Other different utility server.
+    - https://www.youtube.com/watch?v=HTTLjdMMWs8&t=46s
+
+# Client and Server:
+    - Server: Any machine that has node.js installed in it.
+    - Client: Desktop, Laptop, Mobile Device.
+
+    - Server: Ubuntu,
+    - Client: Windows, Linux, Mac (App/Browser)
+
+# Node.js: Single-Process, Single-Thread server technology.
+    - So how can we manage multiple-thousands-of-request in single-main-node-thread/processes.
+
+# Event Loop concept is used in Node.js.
+
+# Different Operations: (Native node operations thread)
+    - File System Operation, (request index.html from server)
+    - Database Operation,
+    - Networking Operation,
+
+# I/O operation || Blocking operation ?
+# Thread Pool, Dead Thread, Wait Thread, Internal Thread, System Defined Thread, Worker Pool. # Out of user scope
+# Main Thread and Thread Pool
+
+# Every request and response generates new events which is processed by event loop.
+# callbacks
+
+# Reference:
+    - https://www.youtube.com/watch?v=HTTLjdMMWs8&t=46s
+
+# Architecture of server-side-programming-language:
+    - Blocking architecture VS Non-blocking architecture,
+    - Synchronous architecture VS Asynchronous architecture,
+    - Single threading architecture VS Multi threading architecture,
+    - IO Intensive Operation/workload VS CPU Intensive Operation/workload.
+
+    - Non-blocking is effectively the same as asynchronous - you make the call, and you'll get a result later, but while that's happening you can do something else.
+    - Blocking is the opposite. You wait for the call to return before you continue your journey.
+
+    - What could be the best server and architecture for CPU/IO/network intensive tasks?
+
+# Need/Type of project/app defines the architecture of server of that particular project/app. && selecting the server-side-programming-language depends upon type of server-architecture our project needed.
+    - Some key factor for server degin/archetectur:
+        > weather our project have IO Intensive Operation/workload or CPU Intensive Operation/workload,
+
+        - If our project has IO Intensive Operation/workload:
+            - then, Non-blocking, Asynchronous, Single-threading architecture will suit best.
+        &
+        - If our project has CPU Intensive Operation/workload:
+            - then, Blocking, Synchronous, Multi-threading architecture will suit best.
+
+Q. How to figure out whether the operation is CPU intensive or not?
+    => https://stackoverflow.com/questions/56494682/how-to-figure-out-whether-the-operation-is-cpu-intensive-or-not
+
+Q. What are the tasks that are CPU intensive/multithreaded?
+
+----------------------------------------------------------------------------------------------------------------------------------
+# Some concepts usage:
+    - (Blocking VS Non-blocking) Architecture,
+    - (Synchronous VS Asynchronous) Architecture,
+    - (Single Threading VS Multi Threading) Architecture,
+    - (IO Intensive VS CPU Intensive) Operation/workload.
+    - (Open-sources VS Closed-sources) Programming Languages,
+    - (Cross-plateform VS Single-platform) Software,
+    - (Cross-plateform VS Single-platform) Programming Languages,
+    - (Interpreted vs Compiled) Programming Languages,
+    - (Relational and Non-Relational) Database,
+    - (SQL VS NoSQL),
+    - 
